@@ -1,1 +1,20 @@
-
+ev-btn {
+    height: 50px;
+    width: 25%;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #dd;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    opacity:1;
+    background-color:rgba(35, 173, 255, 1);
+    transition: all 200ms ease-out;
+    color:white;
+    font-family: "Lucida Console", Courier, monospace;
+}
+ev-btn:hover {
+    opacity:0.8;
+    box-shadow: 0 0 10px rgba(35, 173, 255, 1);
+    
+}
