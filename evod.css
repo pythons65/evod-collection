@@ -18,3 +18,25 @@ ev-btn:hover {
     box-shadow: 0 0 10px rgba(35, 173, 255, 1);
     
 }
+.ev-input{
+  width: 230px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: border-bottom-color 0.4s ease-in-out;
+  transition: border-bottom-color 0.2s ease-in-out;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+}
+.ev-input:focus {
+  outline:none;
+  border-bottom-color: rgba(35, 173, 255, 1);
+  box-shadow: 0px 17px 10px -15px rgba(35, 173, 255, 1);
+}
