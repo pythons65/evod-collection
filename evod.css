@@ -41,68 +41,98 @@ ev-btn:hover {
   border-radius: 2px;
   border: none;
   border-bottom: 1px solid #E0E0E0;
-  box-shadow: 0 1px 5px -2px rgba(0,0,0,.2);
-  
-  &:focus {
-    box-shadow: 0 1px 5px -2px #42A5F5;
-    border-bottom: 1px solid #2196F3;
-  }
-  
+  box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.2);
 }
-
-.form-group {
-  label {
-    color: #616161;
-  }
+.form-control:focus {
+  box-shadow: 0 1px 5px -2px #42A5F5;
+  border-bottom: 1px solid #2196F3;
 }
-
-.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
-  // Color the label and help text
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label  {
-    color: @text-color;
-  }
-  // Set the border and box shadow on specific inputs to match
-  .form-control {
-    border-color: @border-color;
-    &:focus {
-      border-color: darken(@border-color, 10%);
-      box-shadow: 0 1px 5px -2px @background-color;
-    }
-  }
-  // Set validation states also for addons
-  .input-group-addon {
-    color: @text-color;
-    border-color: @border-color;
-    background-color: @background-color;
-  }
-  // Optional feedback icon
-  .form-control-feedback {
-    color: @text-color;
-  }
+.form-group label {
+  color: #616161;
 }
-
 .input-group-addon {
   border: none;
   border-bottom: 1px solid #E0E0E0;
   border-radius: 0;
 }
-
-// Feedback states
-.has-success {
-  .form-control-validation(#4CAF50; #4CAF50; #C8E6C9);
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+  color: #4CAF50;
 }
-.has-warning {
-  .form-control-validation(#FF9800; #FF9800; #FFE0B2);
+.has-success .form-control {
+  border-color: #4CAF50;
 }
-.has-error {
-  .form-control-validation(#F44336; #F44336; #FFCDD2);
+.has-success .form-control:focus {
+  border-color: #3d8b40;
+  box-shadow: 0 1px 5px -2px #C8E6C9;
+}
+.has-success .input-group-addon {
+  color: #4CAF50;
+  border-color: #4CAF50;
+  background-color: #C8E6C9;
+}
+.has-success .form-control-feedback {
+  color: #4CAF50;
+}
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+  color: #FF9800;
+}
+.has-warning .form-control {
+  border-color: #FF9800;
+}
+.has-warning .form-control:focus {
+  border-color: #cc7a00;
+  box-shadow: 0 1px 5px -2px #FFE0B2;
+}
+.has-warning .input-group-addon {
+  color: #FF9800;
+  border-color: #FF9800;
+  background-color: #FFE0B2;
+}
+.has-warning .form-control-feedback {
+  color: #FF9800;
+}
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #F44336;
+}
+.has-error .form-control {
+  border-color: #F44336;
+}
+.has-error .form-control:focus {
+  border-color: #ea1c0d;
+  box-shadow: 0 1px 5px -2px #FFCDD2;
+}
+.has-error .input-group-addon {
+  color: #F44336;
+  border-color: #F44336;
+  background-color: #FFCDD2;
+}
+.has-error .form-control-feedback {
+  color: #F44336;
 }
